@@ -115,3 +115,29 @@
 3. Creación de pruebas para Moq 
 
 4. Las pruebas se ejecutan de la misma manera que antes.
+
+#### Ejemplo 2 con Moq: 
+
+##### Creación de la interfaz para simulación: 
+
+1. En este caso, en el proyecto Web Forms (donde está la lógica), se crearon dos interfaces que representan las dependencias externas:
+
+- IApiClient: Representa el cliente para consumir datos desde una API externa.
+- IDataRepository: Representa la capa de acceso a datos desde la base de datos.
+
+##### Creación de lógica para pruebas con Moq:A
+
+1. Para la API: el cliente real, ApiClient, fue simulado utilizando Moq. El siguiente ejemplo prueba que, al consumir datos desde la API con un ID válido, se obtienen los resultados esperados.
+		
+2. Para la base de datos: La capa de acceso a la base de datos (IDataRepository) fue simulada para devolver un conjunto de datos ficticio. Esto asegura que la lógica que consume estos datos funcione correctamente.
+		
+3. Ejecución de pruebas:
+Las pruebas se ejecutan de la misma manera que con xUnit
+
+#### ¿Qué hace con las dependencias?
+##### Pruebas para la API:
+   * Verifica que al consumir datos desde la API con un ID válido, los datos devueltos coincidan con lo esperado.
+   * Valida que se manejen correctamente los casos en que la API no devuelve datos.
+##### Pruebas para la base de datos:
+   * Simula la capa de acceso a datos para garantizar que la lógica que consume estos datos funcione correctamente.
+   * Genera datos ficticios para representar filas de una tabla.
