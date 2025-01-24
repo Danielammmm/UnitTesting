@@ -1,6 +1,9 @@
 # Unit Testing para ASP.NET en Web Forms
 
+[Descargas investigación detallada](https://github.com/Danielammmm/UnitTesting/blob/131285e7daf84a9d5033f1f04c23aba78a7cf544/Investigaci%C3%B3n%20detallada/Unit%20%26%20Integration%20Testing%20para%20ASP.docx)
+
 ## Unit Testing: 
+[Proyecto del ejemplo](https://github.com/Danielammmm/UnitTesting/tree/131285e7daf84a9d5033f1f04c23aba78a7cf544/Proyecto%20Unit%20Testing%20b%C3%A1sico)
 ### Herramienta principal xUnit. 
 #### ¿Por qué es útil? 
 - Es una herramienta moderna y ligera, útil para realizar pruebas rápidas. 
@@ -117,6 +120,7 @@
 4. Las pruebas se ejecutan de la misma manera que antes.
 
 #### Ejemplo 2 con Moq: 
+[Proyecto Ejemplo](https://github.com/Danielammmm/UnitTesting/tree/131285e7daf84a9d5033f1f04c23aba78a7cf544/Proyecto%20Unit%20Testing%20con%20API%20y%20BDD)
 
 ##### Creación de la interfaz para simulación: 
 
